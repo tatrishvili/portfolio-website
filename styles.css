@@ -116,35 +116,35 @@ body {
     height: 100%;
     z-index: -2;
     overflow: hidden;
-    filter: brightness(0.6) blur(2px);
+    filter: brightness(0.5) blur(4px); /* Enhanced blur for better text readability */
 }
 
 .hero-video-element {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.5);
 }
 
 .hero-content {
-    padding: 3rem 4rem;
+    padding: 2rem 3rem; /* Reduced padding for better focus */
     border-radius: 3px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay */
     backdrop-filter: blur(8px);
     max-width: 80%;
     border-left: 4px solid #8a7c43;
-    transform: translateY(-20px);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeInSlideUp 1s ease-out forwards; /* Animation for hero content */
+    opacity: 0; /* Initial invisibility for animation */
 }
 
 .hero-title {
     font-family: 'Oswald', sans-serif;
-    font-size: 3.5rem;
+    font-size: 4rem; /* Increased font size */
     font-weight: 700;
     color: #fff;
     text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
     letter-spacing: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem; /* Increased spacing */
     text-transform: uppercase;
 }
 
@@ -153,9 +153,8 @@ body {
     font-size: 1.6rem;
     font-weight: 500;
     color: #8a7c43;
-    margin-top: 0.5rem;
     letter-spacing: 1px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem; /* Increased spacing */
 }
 
 .hero-description {
@@ -163,7 +162,6 @@ body {
     font-size: 1.2rem;
     font-weight: 300;
     color: #f1f1f1;
-    margin-top: 1rem;
     max-width: 80%;
     margin: 0 auto;
     line-height: 1.8;
@@ -190,10 +188,20 @@ body {
 .cta-button:hover {
     background-color: #786b3a;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(138, 124, 67, 0.6); /* Glowing hover effect */
 }
 
-
+/* Hero Content Animation */
+@keyframes fadeInSlideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 /* Responsive Hero Content */
 @media (max-width: 768px) {
@@ -203,7 +211,7 @@ body {
     }
 
     .hero-title {
-        font-size: 2.2rem;
+        font-size: 2.5rem; /* Adjusted for mobile */
     }
 
     .hero-subtitle {
