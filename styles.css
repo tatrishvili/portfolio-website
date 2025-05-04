@@ -98,15 +98,6 @@ body {
         margin: 1.5rem 0;
     }
 }
-/* Hero Section */
-.hero {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 
 .hero-video {
     position: absolute;
@@ -126,103 +117,57 @@ body {
 }
 
 .hero-content {
-    padding: 2rem 3rem; /* Reduced padding for better focus */
-    border-radius: 3px;
-    background: rgba(0, 0, 0, 0.7); /* Darker overlay */
-    backdrop-filter: blur(8px);
-    max-width: 80%;
-    border-left: 4px solid #8a7c43;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
-    animation: fadeInSlideUp 1s ease-out forwards; /* Animation for hero content */
-    opacity: 0; /* Initial invisibility for animation */
+    padding: 2rem; /* Simplified padding */
+    border-radius: 8px;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(30, 30, 30, 0.8)); /* Sleek gradient background */
+    backdrop-filter: blur(10px); /* Subtle blur effect */
+    max-width: 60%; /* Reduced width for better focus */
+    text-align: center; /* Center-align text */
+    border: none; /* Removed the border for simplicity */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Modern subtle shadow */
 }
 
 .hero-title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 4rem; /* Increased font size */
+    font-family: 'Source Code Pro', monospace; /* Developer-centric font */
+    font-size: 3.5rem; /* Modern and bold */
     font-weight: 700;
-    color: #fff;
-    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem; /* Increased spacing */
-    text-transform: uppercase;
+    color: #f8f8f8;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Subtle glow for emphasis */
+    margin-bottom: 1rem;
+    text-transform: none; /* Keep the text natural */
 }
 
 .hero-subtitle {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: #8a7c43;
-    letter-spacing: 1px;
-    margin-bottom: 2rem; /* Increased spacing */
-}
-
-.hero-description {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: #f1f1f1;
-    max-width: 80%;
-    margin: 0 auto;
-    line-height: 1.8;
+    font-family: 'Roboto', sans-serif; /* Clean and readable font */
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #8a8a8a;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px; /* Slight spacing for readability */
 }
 
 .hero-cta {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .cta-button {
-    background-color: #8a7c43;
-    color: white;
-    padding: 0.8rem 2rem;
+    background-color: #007acc; /* Developer-oriented blue tone */
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
     text-decoration: none;
-    border-radius: 2px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-    display: inline-block;
+    font-size: 1rem;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #786b3a;
-    transform: translateY(-2px);
-    box-shadow: 0 0 20px rgba(138, 124, 67, 0.6); /* Glowing hover effect */
+    background-color: #005f99; /* Slightly darker hover effect */
+    transform: scale(1.05); /* Modern interaction */
+    box-shadow: 0 0 15px rgba(0, 122, 204, 0.6); /* Subtle glowing hover effect */
 }
 
-/* Hero Content Animation */
-@keyframes fadeInSlideUp {
-    from {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Responsive Hero Content */
-@media (max-width: 768px) {
-    .hero-content {
-        padding: 2rem;
-        max-width: 95%;
-    }
-
-    .hero-title {
-        font-size: 2.5rem; /* Adjusted for mobile */
-    }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .hero-description {
-        font-size: 1rem;
-        max-width: 100%;
-    }
-}
 /* About Section */
 .about {
     padding: 6rem 2rem 4rem;
