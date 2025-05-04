@@ -116,7 +116,7 @@ body {
     height: 100%;
     z-index: -2;
     overflow: hidden;
-    filter: brightness(0.5) blur(4px); /* Enhanced blur for better text readability */
+    filter: brightness(0.5) blur(2px); /* Enhanced blur for better text readability */
 }
 
 .hero-video-element {
