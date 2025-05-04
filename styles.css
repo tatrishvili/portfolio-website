@@ -9,6 +9,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
+     background-color: transparent;
 }
 
 .navbar {
@@ -42,7 +43,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #afaca6;
+    color: black;
 }
 
 /* Hamburger (Mobile) */
