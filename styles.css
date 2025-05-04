@@ -12,7 +12,7 @@ body {
      background-color: transparent;
 }
 
-.nav-links {
+.navbar, .nav-links {
     background-color: transparent !important;
 }
 
