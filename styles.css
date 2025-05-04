@@ -12,6 +12,10 @@ body {
      background-color: transparent;
 }
 
+.nav-links {
+    background-color: transparent !important;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between; 
@@ -37,9 +41,6 @@ body {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-}
-.nav-links {
-    background-color: transparent !important;
 }
 
 .nav-links {
