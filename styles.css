@@ -125,7 +125,6 @@ body {
     text-align: center;
 }
 .hero-content {
-    padding: 3rem 4rem;
     border-radius: 3px;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(8px);
