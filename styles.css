@@ -11,6 +11,11 @@ body {
   color: #333;
   background-color: transparent;
 }
+.navbar .nav-links {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
 
 .navbar {
   position: absolute;
