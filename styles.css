@@ -12,6 +12,11 @@ body {
      background-color: transparent;
 }
 
+.navbar, .nav-links {
+    background-color: transparent !important;
+    box-shadow: none !important; /* In case shadows create a white overlay effect */
+}
+
 .navbar {
     position: absolute;
     top: 0;
