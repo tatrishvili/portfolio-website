@@ -20,7 +20,7 @@ body {
   padding: 1rem 2rem;
   background: transparent;
 }
-nav.navbar .nav-links {
+navbar .nav-links {
     background: transparent !important;
     background-color: transparent !important;
 }
