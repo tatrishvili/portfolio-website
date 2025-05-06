@@ -779,15 +779,12 @@ footer {
         right: -100%;
         width: 70%;
         height: 100vh;
-        background-color: transparent;
+        background: transparent !important;
         flex-direction: column;
         padding: 2rem;
         text-align: right;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
         transition: right 0.3s ease;
-        background: transparent !important;
-        backdrop-filter: none !important;
-}
     }
 
     .nav-links.active {
