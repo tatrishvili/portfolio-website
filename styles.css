@@ -20,9 +20,9 @@ body {
   padding: 1rem 2rem;
   background: transparent;
 }
-.navbar .nav-links {
-  background: transparent !important;
-  background-color: transparent !important;
+nav.navbar .nav-links {
+    background: transparent !important;
+    background-color: transparent !important;
 }
 .navbar .nav-links {
   z-index: 1000; /* Or a higher value */
@@ -785,6 +785,9 @@ footer {
         text-align: right;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
         transition: right 0.3s ease;
+        background: transparent !important;
+        backdrop-filter: none !important;
+}
     }
 
     .nav-links.active {
