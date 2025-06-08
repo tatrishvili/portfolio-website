@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,23 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+     <nav class="anas-navbar">
         <div class="nav-content">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#propos">À Propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>      
+         
+          <ul class="nav-links">
+            <li><a href="#home" class="active">Accueil</a></li>
+            <li><a href="#propos">À Propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact" ><i class="fas fa-envelope"></i></a></li>
+          </ul>
         </div>
     </nav>
-
     <section id="home" class="hero">
     <div class="hero-video">
         <video autoplay muted loop playsinline class="hero-video-element">
@@ -33,14 +33,14 @@
             Votre navigateur ne supporte pas la vidéo.
         </video>
     </div>
-    <div class="hero-content">
-        <h1 class="hero-title">TATRISHVILI Ana</h1>
-        <h2 class="hero-subtitle">Développeuse Web Junior</h2>
-        <p class="hero-description">Étudiante en BUT MMI | Passionnée par le design et les technologies créatives</p>
-    </div>
 </section> 
 
-    <!-- About Section -->
+      <div id="hero-text" class="terminal-text">
+            <H1> Portfolio </H1>
+            <P> Bienvenue sur portfolio de TATRISHVILI Ana</P>
+
+      </div>
+
     <section class="about" id="propos">
         <div class="about-intro">
 
@@ -61,7 +61,7 @@
                 <div class="about-text">
                     <div class="about-section">
                         <h2>Mon Parcours</h2>
-                        <p>Étudiante en BUT MMI (Métiers du Multimédia et de l'Internet) à l'IUT de Troyes, je suis passionnée par la création de contenus numériques innovants. Mon parcours m'a permis de développer des compétences solides en design, développement web et production vidéo.</p>
+                        <p>Étudiante en BUT MMI (Métiers du Multimédia et de l'Internet) à l'IUT de Troyes, je suis passionnée par la création de contenus numériques innovants. Mon parcours m'a permis de développer des compétences solides en design, développement web et production audio et vidéo.</p>
                     </div>
                     <div class="about-section">
                         <h2>Mes Compétences</h2>
@@ -81,6 +81,8 @@
                                     <li><i class="fas fa-check"></i> HTML/CSS</li>
                                     <li><i class="fas fa-check"></i> JavaScript</li>
                                     <li><i class="fas fa-check"></i> Responsive Design</li>
+                                     <li><i class="fas fa-check"></i> SQL</li>
+                                    <li><i class="fas fa-check"></i> Hébergement web</li>
                                 </ul>
                             </div>
                             <div class="skill-category">
@@ -120,7 +122,7 @@
     </section>
 
     
-    <!-- Projects Section -->
+
     <section class="projects" id="projects">
         <div class="projects-intro">
             <div class="creator-info">
@@ -140,7 +142,7 @@
         </div>
         
 
-        <!-- UTOPIA Project -->
+       
         <div class="project-header">
             <h2>UTOPIA Cinema</h2>
             <p class="project-subtitle">Design d'identité visuelle et animation pour un cinéma</p>
@@ -148,8 +150,6 @@
 
         <div class="project-gallery">
      
-           
-
             <div class="gallery-main">
                 <img src="images/utopia-logos.jpg" alt="UTOPIA Logo Design" class="gallery-image">
                 <div class="image-description">
@@ -381,6 +381,188 @@
                 </div>
             </div>
         </div>
+  <!-- sae 203 project -->
+        <div class="project-header">
+            <h2>Site web d’événements – PHP/MySQL, HTTPS</h2>
+            <p class="project-subtitle">Développement full-stack d’un site de recherche d’événements. Intégration base de données, interface d’administration sécurisée, responsive design, déploiement sur VPS avec Apache/Docker.</p>
+        </div>
+         <div class="project-gallery">
+            <div class="gallery-main">
+                <img src="images/site-event.png" alt="Site web d’événements" class="gallery-image">
+                <div class="image-description">
+                    <h4>Vue d'Ensemble du Projet</h4>
+                    <p>Conception et développement d’un site web responsive permettant la recherche d’événements par ville, avec une architecture back-end PHP/MySQL. Mise en place des opérations CRUD, sécurisation des formulaires contre les injections, déploiement sur VPS via Docker, configuration d’Apache et activation du protocole HTTPS. Interface d’administration protégée par authentification. Le projet intègre également une gestion responsive (point d’arrêt à 576 px) et des tests multi-navigateurs.</p>
+                   <div class="tech-icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                    </div>
+                </div>
+            </div>
+               <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/catalogue-events.png" alt="Catalogue des evenements" class="gallery-image">
+                    </div>
+                    <div class="image-description">
+                        <h4>Catalogue des evenements</h4>
+                        <p>Présentation des événements avec filtres par catégorie et date. Intégration d'une carte interactive pour la localisation des événements. Design épuré et navigation intuitive.</p>
+                        <div class="tech-icons">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/administration.png" alt="Page d'Administration" class="gallery-image">
+                    </div>
+                    <div class="image-description">
+                        <h4>Page d'Administration</h4>
+                        <p>Développement d’une interface d’administration reliée à une base de données MySQL, permettant la gestion des événements : création, modification (texte, date, durée, image), et suppression. Sécurisée par authentification Apache et conçue avec des requêtes SQL personnalisées.</p>
+                        <div class="tech-icons">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-js"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/research-page.png" alt="Page de Recherche" class="gallery-image">
+                    </div>
+                    <div class="image-description">
+                        <h4>Page de recherche</h4>
+                        <p>La page de recherche permet aux utilisateurs de retrouver un événement en saisissant son nom. Le formulaire, protégé contre les injections SQL, interagit avec la base de données pour afficher des résultats en temps réel. Bien que centrée sur le nom, la structure peut facilement évoluer vers une recherche multi-critères. Les résultats sont affichés via une page dédiée (reponse_recherche.php) avec une mise en page responsive.</p>
+                        <div class="tech-icons">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-link">
+                <a href="http://mmi24g15.sae203.ovh/" target="_blank" class="visit-button">
+                    <i class="fas fa-external-link-alt"></i>
+                    Visiter le site
+                </a>
+            </div>
+        </div>
+        <!-- packshot -->
+        <div class="project-header">
+            <h2>Packshot d’un produit géorgien de Pâques</h2>
+            <p class="project-subtitle">Projet photographique complet : stylisme, prise de vue et postproduction d’un centre de table festif à destination commerciale.</p>
+        </div>
+         <div class="project-gallery">
+            <div class="gallery-main">
+                <img src="images/packshot.jpg" alt="Packshot d’un produit géorgien de Pâques" class="gallery-image-shot">
+                <div class="image-description">
+                    <h4>Packshot</h4>
+                    <p>Pour ce projet, j’ai réalisé un packshot d’un centre de table traditionnel de Pâques, combinant éléments culinaires et décoratifs 
+
+L'objectif principal de ce projet était de vendre le produit et de le rendre intéressant pour les clients à l'acheter, ce projet m'a donc permis d'en apprendre davantage sur la stratégie marketing produit ainsi que sur l'aspect photographie.
+
+Tout a commencé par une mise en scène minutieuse du produit, en soignant la composition, la lumière naturelle et l'ambiance printanière.
+J’ai réalisé les prises de vue en format RAW pour conserver toute la qualité des détails.
+
+Ensuite, j’ai utilisé Adobe Lightroom pour Corriger l’exposition et la balance des blancsTravailler la lumière,  et le contraste et les couleurs pour faire ressortir les textures
+
+Enfin, j’ai poursuivi le travail dans Adobe Photoshop pour  Appliquer des retouches fines (nettoyage, détails)</p>
+                    <div class="tech-icons">
+                            <i class="fas fa-camera"></i>
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+            </div>
+ <!-- Gabarit project -->
+        <div class="project-header">
+            <h2>Conception d’un gabarit UI pour un site de métropole (approche Mobile First)</h2>
+            <p class="project-subtitle">J’ai conçu un gabarit pour un site web fictif d’une métropole, en privilégiant une approche Mobile First.</p>
+        </div>
+         <div class="project-gallery">
+            <div class="gallery-main">
+                 <iframe src="images/Gabarit_Ana.pdf" width="100%" height="500px"> </iframe>
+                <div class="image-description">
+                    <h4>Gabarit</h4>
+                    <p>Dans le cadre de mon apprentissage en design d’interface, j’ai conçu un gabarit pour un site web fictif d’une métropole, en privilégiant une approche Mobile First.
+
+J’ai choisi de travailler sur la page des services, considérée comme essentielle pour les utilisateurs. Après un zoning papier, j’ai développé une grille de mise en page et une grille typographique en m’appuyant sur les échelles recommandées par Gridlover : tailles de texte entre 14 et 20 px, interlignage de 1,5 à 2x, marges latérales de 150 px sur desktop et 20 px sur mobile/tablette.
+
+Ce projet m’a permis de renforcer mes compétences sur Figma, de découvrir Gridlover, et d’acquérir une première expérience en UI design. J’ai ainsi compris l’importance de maquettes bien pensées pour faciliter le développement web.</p>
+                    <div class="tech-icons">
+                            <i class="fas fa-palette"></i>
+                            <i class="fas fa-figma"></i>
+                            <i class="fas fa-cube"></i>
+                        </div>
+                    </div>
+            </div>
+    <!-- My design works -->
+        <div class="project-header">
+            <h2>Créations graphiques – Photoshop & Illustrator</h2>
+            <p class="project-subtitle">Sélection de travaux personnels et explorations visuelles en design graphique, retouche d'image, composition et illustration vectorielle.</p>
+        </div>
+
+        <div class="project-gallery">
+            <div class="gallery-main">
+                <img src="images/polaroids.png" alt="script d'action" class="gallery-image-shot">
+                <div class="image-description">
+                    <h4>Creation d'un script d'action</h4>
+                    <p>Création d'un script d'action sur Photoshop permettant de générer automatiquement des polaroids personnalisés à partir d’images au format RAW. Le processus inclut redimensionnement, application de filtres colorés, équilibrage de lumière, dégradés, effets photo vintage et export automatique. L’objectif était de simplifier et styliser la présentation de souvenirs visuels.</p>
+                    <div class="tech-icons">
+                        <i class="fas fa-paint-brush"></i>
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/camera.png" alt="make-up digital" class="gallery-image">
+                    </div>
+                    <div class="image-description">
+                        <h4>Effet maquillage - Dégradés & styles graphiques</h4>
+                        <p>À partir d’une simple forme de caméra, j’ai exploré différents effets dans Photoshop et Illustrator : incrustations de dégradés, lumière interne, textures, motifs, ombres portées, contours. Cet exercice m’a permis de mieux comprendre l’utilisation combinée des calques de réglage, des modes de fusion et de la lumière pour créer un effet "make-up digital".</p>
+                        <div class="tech-icons">
+                           
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/moodboard.png" alt="moodboard" class="gallery-image">
+                    </div>
+                    <div class="image-description">
+                        <h4>Moodboard d'inspiration</h4>
+                        <p> Réalisation d’un moodboard personnel pour poser l’ambiance graphique d’un projet de charte visuelle inspiré par une atmosphère chaleureuse et traditionnelle, que j'ai utilisé pour créer après ma recette personnelle dans Illustrator contenait 8 dessins, et ce moodboard m'a aidé à rester dans le thème</p>
+                        <div class="tech-icons">
+                           
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                </div>            
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <iframe src="images/isometrie.pdf" width="100%" height="500px"> </iframe>
+                    </div>
+                    <div class="image-description">
+                        <h4>isometrie</h4>
+                        <p>Réalisation d’une carte isométrique au format A1 dans Illustrator, construite à partir d’une grille géométrique précise. Chaque îlot représente une facette de ma personnalité, imaginée et développée graphiquement avec une identité propre.
+   
+Le premier îlot met en scène mon univers créatif autour du design et du multimédia. Les deux suivants traduisent visuellement mes passions personnelles à travers des éléments symboliques, une composition équilibrée et une palette cohérente.</p>
+                        <div class="tech-icons">
+                         
+                            <i class="fas fa-cube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="tech-grid">
+                    
+                </div>
+            </div>
+        </div>
 
         <!-- High School Band Project -->
         <div class="project-header">
@@ -439,7 +621,78 @@
                         <li><i class="fas fa-check"></i> Mise en place d'un système de transmission du groupe aux futurs élèves</li>
                     </ul>
                 </div>
-  
+            </div>
+        </div>
+             </section>
+ <!-- twine -->
+        <div class="project-header">
+            <h2>Expérience interactive : écriture, design et programmation d’un récit Twine</h2>
+            <p class="project-subtitle">  construire un univers immersif à choix multiples</p>
+        </div>
+
+        <div class="project-gallery">
+            <div class="gallery-main">
+                <img src="images/twine.png" alt="twine" class="gallery-image-shot">
+                <div class="image-description">
+                    <h4>Histoire interactive -twine</h4>
+                    <p>J’ai créé une histoire interactive à choix multiples à l’aide du logiciel Twine, en développant un récit original,
+     Pour enrichir l’expérience du lecteur, j’ai personnalisé l’apparence visuelle du projet en modifiant le fichier CSS, en intégrant des images de fond, et en utilisant des balises HTML et macros (comme text-colour et text-style) afin de styliser le texte.
+      Le résultat est une narration immersive et dynamique, à la fois narrative et visuelle.</p>
+                    <div class="tech-icons">
+                        <i class="fas fa-paint-brush"></i>
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/twine-start.png" alt="make-up digital" class="gallery-image">
+                    </div>
+                    <div class="image-description">
+                        <h4>Aperçu du projet dans Twine</h4>
+                        <p>Cette image montre le début de l'histoire interactive, où le lecteur fait ses premiers choix.</p>
+                        <div class="tech-icons">
+                           
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/twine-myrielle.png" alt="moodboard" class="gallery-image">
+                    </div>
+                    <div class="image-description">
+                        <h4>Aperçu du projet dans Twine</h4>
+                        <p> Cette section illustre la structure narrative du récit interactif, Chaque bloc représente une étape de l’histoire, reliée aux autres par des choix interactifs qui orientent le déroulement.
+         J’ai intégré du code HTML et CSS personnalisé afin de styliser le texte, ajouter des effets visuels et insérer des images.</p>
+                        <div class="tech-icons">
+                           
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                </div>            
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="images/twine-code.png" alt="moodboard" class="gallery-image">
+                    </div>
+                    <div class="image-description">
+                        <h4>Feuille de styles CSS</h4>
+                        <p> Ce code CSS personnalisé permet de styliser le texte, ajouter des effets visuels et insérer des images.</p>
+                        <div class="tech-icons">
+                         
+                            <i class="fas fa-cube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="tech-grid">
+                    
+                </div>
+            </div>
+        </div>
+
     <section class="contact" id="contact">
         <div class="contact-content">
             <h2>Contact</h2>
@@ -454,8 +707,6 @@
         </div>
     </div>
     </section>
-
-
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -469,4 +720,4 @@
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
